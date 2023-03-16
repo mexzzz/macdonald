@@ -45,7 +45,7 @@ body {
     width: 27%;
 }
 
-#text5{
+#text5 {
     position: absolute;
     top: 1150px;
     left: 10%;
@@ -61,8 +61,109 @@ body {
     width: 27%;
 }
 
-#footer{
+#footer {
     position: absolute;
-    top: 175%; 
+    top: 175%;
     left: 45%;
 }
+
+.image1 {
+    position: absolute;
+    top: -60%;
+    left: 75%;
+    max-width: 1000px;
+  }
+  
+  .image2 {
+    position: absolute;
+    max-width: 1000px;
+    top: 15%;
+    left: -19%;
+    transform: translate(-29%, 30%);
+  }
+
+  .image3 {
+    position: absolute;
+    top: 100%;
+    left: 97%;
+    max-width: 1000px;
+    transform: translate(-29%, 30%);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .image1 {
+      top: -40%;
+      left: 60%;
+      width: 30%;
+      max-width: 150px;
+    }
+  
+    .image2 {
+      top: 30%;
+      left: -40%;
+      width: 30%;
+      max-width: 150px;
+      transform: translate(-40%, 30%);
+    }
+
+    .image3 {
+        top: 60%;
+        left: 60%;
+        width: 30%;
+        max-width: 150px;
+      }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .image1 {
+      top: -50%;
+      left: 40%;
+      width: 40%;
+      max-width: 100px;
+    }
+  
+    .image2 {
+      top: 40%;
+      left: 10%;
+      width: 40%;
+      max-width: 100px;
+      transform: translate(10%, 40%);
+    }
+
+    .image3 {
+        top: 80%;
+        left: 40%;
+        width: 40%;
+        max-width: 100px;
+      }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .image1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: none;
+      margin: 0 auto;
+      width: 80%;
+      max-width: 250px;
+    }
+  
+    .image2 {
+      top: 30%;
+      left: -40%;
+      width: 30%;
+      max-width: 150px;
+      transform: translate(-40%, 30%);
+    }
+
+    .image3 {
+        position: absolute;
+        top: 60%;
+        left: 0;
+        transform: none;
+        margin: 0 auto;
+        width: 80%;
+        max-width: 250px;
+      }
+  }
