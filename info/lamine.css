@@ -60,3 +60,9 @@ body {
     height: 60%;
     width: 27%;
 }
+
+#footer{
+    position: absolute;
+    top: 175%; 
+    left: 45%;
+}
