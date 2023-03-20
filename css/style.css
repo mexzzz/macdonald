@@ -4,7 +4,23 @@ body {
     padding: 0;
     text-decoration: none;
   }
-  
+
+  h1{
+    font-family: 'SpeedeeBold', sans-serif;
+    font-weight: bold;
+    font-size: 100px;
+  }
+
+  ul, li, a{
+    font-family: 'SpeedeeBold', sans-serif;
+    font-weight: bold;
+  }
+
+  .font {
+    font-family: 'SpeedeeBold', sans-serif;
+    font-weight: bold;
+  }
+
   .image1 {
     position: absolute;
     top: -60%;
