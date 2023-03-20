@@ -16,11 +16,48 @@ body {
     font-weight: bold;
   }
 
+  .bg-shadow {
+   
+  }
+
+  .logo-container {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+  }
+  
+  .navbar-brand img {
+    width: 70px;
+    height: auto;
+}
+
+.navbar-nav {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.nav-item {
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
   .font {
     font-family: 'SpeedeeBold', sans-serif;
     font-weight: bold;
   }
 
+  .image1, .image2 {
+    display: block;
+    margin: auto;
+  }
+  
   .image1 {
     position: absolute;
     top: -60%;
@@ -37,6 +74,8 @@ body {
   }
   
   @media screen and (max-width: 768px) {
+    
+
     .image1 {
       top: -40%;
       left: 60%;
