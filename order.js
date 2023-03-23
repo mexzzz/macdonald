@@ -32,16 +32,16 @@ let cola_count = 0;
 
 
 let bigmac = new Image();
-bigmac.src = "bigmac.jpg";
+bigmac.src = "images/bigmac.jpg";
 bigmac.className = "topm";
 
 let fries = new Image();
-fries.src = "fries.jpg";
+fries.src = "images/fries.jpg";
 fries.className = "topm";
 fries.style.clear = "both";
 
 let cola = new Image();
-cola.src = "drinks.jpg";
+cola.src = "images/drinks.jpg";
 cola.className = "topm";
 function add(a){
  
@@ -51,12 +51,19 @@ function add(a){
         var div = document.createElement("div");
         var para = document.createElement("p");
         var para2 = document.createElement("p");
-        bigmac_count++;
-        para2.innerHTML = bigmac_count;
+        var para3 = document.createElement("p");
+        para.className = "menup";
+        para.innerHTML = "Big Mac";
         div.className = "div5";
         div.id = "div5" + a;
-        para.id = "menup";
+        para.className = "menup";
         para.innerHTML = "Big Mac";
+        bigmac_count++;
+        para2.innerHTML = "x" + bigmac_count;
+        para2.className = "menup2";
+        var price = bigmac_count * 4.95;
+        para3.innerHTML = "€" + price.toFixed(2);
+        para3.className = "menup2";
 
         if (i1 == false)
         {
@@ -64,24 +71,63 @@ function add(a){
         document.getElementById("div5" + a).appendChild(bigmac);
         document.getElementById("div5" + a).appendChild(para);
         document.getElementById("div5" + a).appendChild(para2);
+        document.getElementById("div5" + a).appendChild(para3);
         i1 = true;
-        
-        const button = document.createElement('button')
-        button.innerText = 'Verwijderen'
-        button.id = 'removeButton'
-        button.addEventListener('click', () => {
-            remove();
-        })
-        document.getElementById("div5" + a).appendChild(button);
 
-        function remove() {
-            div.remove();
-            i1 = false;
-            bigmac_count = 0;
-          }
+          const button2 = document.createElement('button');
+          button2.innerText = '-';
+          button2.id = 'reduceButton';
+          button2.className = 'menubtn2';
+          button2.addEventListener('click', () => {
+              reduce();
+          })
+          document.getElementById("div5" + a).appendChild(button2);
+  
+          function reduce() {
+            if (bigmac_count > 1){
+              bigmac_count--;
+              price = bigmac_count * 4.95;
+              document.getElementById("div5" + a).children[2].innerHTML = "x" + bigmac_count;
+              document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+            }
+            }
+
+            const button3 = document.createElement('button');
+            button3.innerText = '+';
+            button3.id = 'increaseButton';
+            button3.className = 'menubtn3';
+            button3.addEventListener('click', () => {
+                increase();
+            })
+            document.getElementById("div5" + a).appendChild(button3);
+    
+            function increase() {
+                if (bigmac_count < 20){
+                bigmac_count++;
+                price = bigmac_count * 4.95;
+                document.getElementById("div5" + a).children[2].innerHTML = "x" + bigmac_count;
+                document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+                }
+              }
+
+              const button = document.createElement('button');
+              button.innerText = 'X';
+              button.id = 'removeButton';
+              button.className = 'menubtn1';
+              button.addEventListener('click', () => {
+                  remove();
+              })
+              document.getElementById("div5" + a).appendChild(button);
+      
+              function remove() {
+                  div.remove();
+                  i1 = false;
+                  bigmac_count = 0;
+                }
 
         }
-        else {document.getElementById("div5" + a).children[2].innerHTML = bigmac_count;}
+        else {document.getElementById("div5" + a).children[2].innerHTML = "x" + bigmac_count;
+                document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);}
         break;
 
 
@@ -90,12 +136,19 @@ function add(a){
         var div = document.createElement("div");
         var para = document.createElement("p");
         var para2 = document.createElement("p");
-        fries_count++;
-        para2.innerHTML = fries_count;
+        var para3 = document.createElement("p");
+        para.className = "menup";
+        para.innerHTML = "Big Mac";
         div.className = "div5";
         div.id = "div5" + a;
-        para.id = "menup";
+        para.className = "menup";
         para.innerHTML = "Fries";
+        fries_count++;
+        para2.innerHTML = "x" + fries_count;
+        para2.className = "menup2";
+        var price = fries_count * 1.95;
+        para3.innerHTML = "€" + price.toFixed(2);
+        para3.className = "menup2";
 
         if (i2 == false)
         {
@@ -103,24 +156,63 @@ function add(a){
         document.getElementById("div5" + a).appendChild(fries);
         document.getElementById("div5" + a).appendChild(para);
         document.getElementById("div5" + a).appendChild(para2);
+        document.getElementById("div5" + a).appendChild(para3);
         i2 = true;
 
-        const button = document.createElement('button')
-        button.innerText = 'Verwijderen'
-        button.id = 'removeButton'
-        button.addEventListener('click', () => {
-            remove();
-        })
-        document.getElementById("div5" + a).appendChild(button);
+          const button2 = document.createElement('button');
+          button2.innerText = '-';
+          button2.id = 'reduceButton';
+          button2.className = 'menubtn2';
+          button2.addEventListener('click', () => {
+              reduce();
+          })
+          document.getElementById("div5" + a).appendChild(button2);
+  
+          function reduce() {
+            if (fries_count > 1){
+              fries_count--;
+              price = fries_count * 1.95;
+              document.getElementById("div5" + a).children[2].innerHTML = "x" + fries_count;
+              document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+            }
+            }
 
-        function remove() {
-            div.remove();
-            i2 = false;
-            fries_count = 0;
-          }
+            const button3 = document.createElement('button');
+            button3.innerText = '+';
+            button3.id = 'increaseButton';
+            button3.className = 'menubtn3';
+            button3.addEventListener('click', () => {
+                increase();
+            })
+            document.getElementById("div5" + a).appendChild(button3);
+    
+            function increase() {
+                if (fries_count < 20){
+                fries_count++;
+                price = fries_count * 1.95;
+                document.getElementById("div5" + a).children[2].innerHTML = "x" + fries_count;
+                document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+                }
+              }
+
+              const button = document.createElement('button');
+              button.innerText = 'X';
+              button.id = 'removeButton';
+              button.className = 'menubtn1';
+              button.addEventListener('click', () => {
+                  remove();
+              })
+              document.getElementById("div5" + a).appendChild(button);
+      
+              function remove() {
+                  div.remove();
+                  i2 = false;
+                  fries_count = 0;
+                }
 
         }
-        else {document.getElementById("div5" + a).children[2].innerHTML = fries_count;}
+        else {document.getElementById("div5" + a).children[2].innerHTML = "x" + fries_count;
+                document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);}
         break;
 
 
@@ -130,11 +222,12 @@ function add(a){
         var para = document.createElement("p");
         var para2 = document.createElement("p");
         cola_count++;
-        para2.innerHTML = cola_count;
+        para2.innerHTML = "x" + cola_count;
         div.className = "div5";
         div.id = "div5" + a;
-        para.id = "menup";
+        para.className = "menup";
         para.innerHTML = "Cola";
+        para2.className = "menup";
 
         if (i3 == false)
         {
@@ -144,9 +237,9 @@ function add(a){
         document.getElementById("div5" + a).appendChild(para2);
         i3 = true;
 
-        const button = document.createElement('button')
-        button.innerText = 'Verwijderen'
-        button.id = 'removeButton'
+        const button = document.createElement('button');
+        button.innerText = 'Verwijderen';
+        button.id = 'removeButton';
         button.addEventListener('click', () => {
             remove();
         })
@@ -159,7 +252,7 @@ function add(a){
           }
 
         }
-        else {document.getElementById("div5" + a).children[2].innerHTML = cola_count;}
+        else {document.getElementById("div5" + a).children[2].innerHTML = "x" + cola_count;}
         break;
     }
 }

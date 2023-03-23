@@ -117,8 +117,34 @@
         color: rgb(0, 0, 0);
       }
 
-#menup {
+.menup {
+        font-size: 3vw;
+        margin-left: 4vw;
+        float: left;
+}
+
+.menup2 {
+        font-size: 3vw;
+        margin-right: 4vw;
+        float: right;
+}
+
+.menubtn1 {
         font-size: 2vw;
+        margin-top: 3.5vw;
+        margin-left: 4vw;
+        position: absolute;
+}
+.menubtn2 {
+        font-size: 2vw;
+        margin-top: 3.5vw;
+        margin-left: 8vw;
+        position: absolute;
+}
+.menubtn3 {
+        font-size: 2vw;
+        margin-top: 3.5vw;
         margin-left: 10vw;
+        position: absolute;
 }
       
