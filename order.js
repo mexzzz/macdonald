@@ -56,8 +56,6 @@ function add(a){
         para.innerHTML = "Big Mac";
         div.className = "div5";
         div.id = "div5" + a;
-        para.className = "menup";
-        para.innerHTML = "Big Mac";
         bigmac_count++;
         para2.innerHTML = "x" + bigmac_count;
         para2.className = "menup2";
@@ -221,13 +219,17 @@ function add(a){
         var div = document.createElement("div");
         var para = document.createElement("p");
         var para2 = document.createElement("p");
-        cola_count++;
-        para2.innerHTML = "x" + cola_count;
-        div.className = "div5";
-        div.id = "div5" + a;
+        var para3 = document.createElement("p");
         para.className = "menup";
         para.innerHTML = "Cola";
-        para2.className = "menup";
+        div.className = "div5";
+        div.id = "div5" + a;
+        cola_count++;
+        para2.innerHTML = "x" + cola_count;
+        para2.className = "menup2";
+        var price = cola_count * 2.95;
+        para3.innerHTML = "€" + price.toFixed(2);
+        para3.className = "menup2";
 
         if (i3 == false)
         {
@@ -235,24 +237,62 @@ function add(a){
         document.getElementById("div5" + a).appendChild(cola);
         document.getElementById("div5" + a).appendChild(para);
         document.getElementById("div5" + a).appendChild(para2);
+        document.getElementById("div5" + a).appendChild(para3);
         i3 = true;
 
-        const button = document.createElement('button');
-        button.innerText = 'Verwijderen';
-        button.id = 'removeButton';
-        button.addEventListener('click', () => {
-            remove();
-        })
-        document.getElementById("div5" + a).appendChild(button);
+          const button2 = document.createElement('button');
+          button2.innerText = '-';
+          button2.id = 'reduceButton';
+          button2.className = 'menubtn2';
+          button2.addEventListener('click', () => {
+              reduce();
+          })
+          document.getElementById("div5" + a).appendChild(button2);
+  
+          function reduce() {
+            if (cola_count > 1){
+              cola_count--;
+              price = cola_count * 2.95;
+              document.getElementById("div5" + a).children[2].innerHTML = "x" + cola_count;
+              document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+            }
+            }
 
-        function remove() {
-            div.remove();
-            i3 = false;
-            cola_count = 0;
-          }
+            const button3 = document.createElement('button');
+            button3.innerText = '+';
+            button3.id = 'increaseButton';
+            button3.className = 'menubtn3';
+            button3.addEventListener('click', () => {
+                increase();
+            })
+            document.getElementById("div5" + a).appendChild(button3);
+    
+            function increase() {
+                if (cola_count < 20){
+                    cola_count++;
+                price = cola_count * 1.95;
+                document.getElementById("div5" + a).children[2].innerHTML = "x" + cola_count;
+                document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+                }
+              }
+
+              const button = document.createElement('button');
+              button.innerText = 'X';
+              button.id = 'removeButton';
+              button.className = 'menubtn1';
+              button.addEventListener('click', () => {
+                  remove();
+              })
+              document.getElementById("div5" + a).appendChild(button);
+      
+              function remove() {
+                  div.remove();
+                  i3 = false;
+                  cola_count = 0;
+                }
 
         }
-        else {document.getElementById("div5" + a).children[2].innerHTML = "x" + cola_count;}
-        break;
+        else {document.getElementById("div5" + a).children[2].innerHTML = "x" + cola_count;
+                document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);}
     }
 }
