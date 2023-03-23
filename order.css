@@ -1,0 +1,124 @@
+﻿@charset "UTF-8";
+
+
+#div0 {
+        clear: both;
+        float: left;
+        border: 1px solid rgb(172, 172, 172);
+        width: 70vw;
+        height: 10vw;
+        margin-left: 20vw;
+}
+
+
+.div2 {
+        float: left;
+        clear: both;
+        border: 1px solid rgb(172, 172, 172);
+        width: 10vw;
+        height: 40vw;
+        margin-top: 2vw;
+        margin-left: 8vw;
+}
+
+.div3 {
+        border: 1px solid rgb(172, 172, 172);
+        width: 70vw;
+        height: 40vw;
+        margin-left: 20vw;
+        float: left;
+        clear: both;
+        margin-top: -40vw;
+}
+
+#div4 {
+        clear: both;
+        float: left;
+        border: 1px solid rgb(172, 172, 172);
+        width: 70vw;
+        height: auto;
+        margin-left: 20vw;
+        margin-top: 2vw;
+}
+
+/* For the shopping cart page */
+.div5 {
+        border: 1px solid rgb(172, 172, 172);
+        width: 60vw;
+        height: 10vw;
+        margin-left: 5vw;
+}
+
+#div21 {
+        display: block;
+}
+
+#div22, #div23, #div24, #div25, #div26 {
+        display: none;
+}
+
+#div31 {
+        display: block;
+}
+
+#div32, #div33, #div34, #div35, #div36 {
+        display: none;
+}
+
+
+.topm {
+        width: 8vw;
+        height: auto;
+        margin-left: 3vw;
+        margin-top: 1vw;
+        float: left;
+}
+
+.leftm {
+        width: 8vw;
+        height: auto;
+        margin-left: 1vw;
+        margin-top: 1vw;
+}
+
+.midm {
+        width: 12vw;
+        height: auto;
+        margin-left: 2vw;
+        margin-top: 1vw;
+}
+
+#total {
+        float: left;
+        font-size: 4vw;
+}
+
+.button {
+        border: none;
+        color: white;
+        padding: 2vw 8vw;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 3vw;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        margin-left: 2vw;
+        margin-top: 1vw;
+      }
+      
+      #orderbtn {
+        background-color: rgb(255, 209, 4); 
+        color: rgb(255, 255, 255); 
+      }
+      
+      #orderbtn:hover {
+        background-color: #f9fd00;
+        color: rgb(0, 0, 0);
+      }
+
+#menup {
+        font-size: 2vw;
+        margin-left: 10vw;
+}
+      
