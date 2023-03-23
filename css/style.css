@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     text-decoration: none;
+    box-sizing: border-box;
   }
 
   h1{
@@ -14,10 +15,6 @@ body {
   ul, li, a{
     font-family: 'SpeedeeBold', sans-serif;
     font-weight: bold;
-  }
-
-  .bg-shadow {
-   
   }
 
   .logo-container {
@@ -129,3 +126,17 @@ body {
     }
   }
   
+.hero2img  {
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+    font-family: 'SpeedeeBold', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+}
+.container {
+  padding-top: 310px;
+  position: relative;
+}
