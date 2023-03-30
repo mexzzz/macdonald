@@ -81,8 +81,9 @@
 .topm {
         width: 8vw;
         height: auto;
-        margin-left: 3vw;
+        margin-left: 0;
         margin-top: 1vw;
+        margin-right: 1vw;
         float: left;
 }
 
@@ -96,7 +97,7 @@
 .midm {
         width: 12vw;
         height: auto;
-        margin-left: 2vw;
+        margin-left: 1vw;
         margin-top: 1vw;
 }
 
@@ -133,12 +134,53 @@
         font-size: 3vw;
         margin-left: 4vw;
         float: left;
+        background-color: rgb(255, 209, 4);
+        /* Set the background color */
+        border: none;
+        /* Remove the border */
+        color: white;
+        /* Set the text color */
+        padding: 12px 24px;
+        /* Set the padding */
+        text-align: center;
+        /* Center the text */
+        text-decoration: none;
+        /* Remove the underline */
+        display: inline-block;
+        /* Display as a block element */
+        font-size: 25px;
+        /* Set the font size */
+        margin: 10px;
+        /* Set the margin */
+        border-radius: 4px;
+        color: black;
 }
 
 .menup2 {
         font-size: 3vw;
         margin-right: 4vw;
         float: right;
+        background-color: rgb(255, 209, 4);
+        /* Set the background color */
+        border: none;
+        /* Remove the border */
+        color: white;
+        /* Set the text color */
+        padding: 12px 24px;
+        /* Set the padding */
+        text-align: center;
+        /* Center the text */
+        text-decoration: none;
+        /* Remove the underline */
+        display: inline-block;
+        /* Display as a block element */
+        font-size: 16px;
+        /* Set the font size */
+        margin: 10px;
+        /* Set the margin */
+        border-radius: 4px;
+        color: black;
+
 }
 
 .menubtn1 {
@@ -146,20 +188,75 @@
         margin-top: 3.5vw;
         margin-left: 4vw;
         position: absolute;
+        background-color: rgb(255, 209, 4);
+        /* Set the background color */
+        border: none;
+        /* Remove the border */
+        color: white;
+        /* Set the text color */
+        padding: 12px 24px;
+        /* Set the padding */
+        text-align: center;
+        /* Center the text */
+        text-decoration: none;
+        /* Remove the underline */
+        display: inline-block;
+        /* Display as a block element */
+        font-size: 16px;
+        /* Set the font size */
+        margin: 10px;
+        /* Set the margin */
+        border-radius: 4px;
+        color: black;
+
 }
 
 .menubtn2 {
-        font-size: 2vw;
-        margin-top: 3.5vw;
-        margin-left: 8vw;
-        position: absolute;
+        background-color: rgb(255, 209, 4);
+        /* Set the background color */
+        border: none;
+        /* Remove the border */
+        color: white;
+        /* Set the text color */
+        padding: 12px 24px;
+        /* Set the padding */
+        text-align: center;
+        /* Center the text */
+        text-decoration: none;
+        /* Remove the underline */
+        display: inline-block;
+        /* Display as a block element */
+        font-size: 16px;
+        /* Set the font size */
+        margin: 10px;
+        /* Set the margin */
+        border-radius: 4px;
+        color: black;
+
 }
 
 .menubtn3 {
-        font-size: 2vw;
-        margin-top: 3.5vw;
-        margin-left: 10vw;
-        position: absolute;
+        background-color: rgb(255, 209, 4);
+        /* Set the background color */
+        border: none;
+        /* Remove the border */
+        color: white;
+        /* Set the text color */
+        padding: 12px 24px;
+        /* Set the padding */
+        text-align: center;
+        /* Center the text */
+        text-decoration: none;
+        /* Remove the underline */
+        display: inline-block;
+        /* Display as a block element */
+        font-size: 16px;
+        /* Set the font size */
+        margin: 10px;
+        /* Set the margin */
+        border-radius: 4px;
+        color: black;
+
 }
 
 body {
@@ -380,9 +477,49 @@ h2 {
         border-radius: 5px;
         cursor: pointer;
         transition: all 0.3s ease-in-out;
+
 }
 
 .midm:hover {
         transform: scale(1.1);
         border-color: #ccc;
+}
+
+.div2 {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.leftm {
+        padding: 0;
+        margin: 0;
+        margin-top: 1.7vw;
+        text-align: center;
+}
+
+p {
+        margin-left: 64px;
+
+}
+
+h3 {
+        margin-left: 34px;
+}
+
+
+.item-price {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 5px;
+}
+
+.menu-item {
+        display: inline-flex;
+        align-items: center;
+}
+
+.menu-item h3 {
+        margin-right: 10px;
 }
