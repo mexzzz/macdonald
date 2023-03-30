@@ -1,0 +1,25 @@
+﻿@charset "UTF-8";
+
+body {
+        background-color: #272629;
+}
+
+h1 {
+        color: white;
+        text-align: center;
+}
+
+p, label {
+        color: white;
+}
+
+form { 
+        position:fixed;
+        top:10%;
+        left:42%;
+        width:300px;
+        }
+
+input, select {
+        float: right;
+}
