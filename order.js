@@ -24,7 +24,7 @@ switch(a) {
 }
 }
 
-let i1 = false; let i2 = false; let i3 = false; let i4 = false; let i5 = false; let i6 = false; let i7 = false; let i9 = false; let i10 = false; let i11 = false;
+let i1 = false; let i2 = false; let i3 = false; let i4 = false; let i5 = false; let i6 = false; let i7 = false; let i8 = false; let i9 = false; let i10 = false; let i11 = false;
 
 let divcount2 = 1;
 
@@ -39,7 +39,10 @@ bigmac.className = "topm";
 let fries = new Image();
 fries.src = "images/fries.jpg";
 fries.className = "topm";
-fries.style.clear = "both";
+
+let cola = new Image();
+cola.src = "images/drinks.jpg";
+cola.className = "topm";
 
 let mcchicken = new Image();
 mcchicken.src = "images/mcchicken.jpg";
@@ -62,7 +65,7 @@ smoothie.src = "images/smoothies.jpg";
 smoothie.className = "topm";
 
 let tea = new Image();
-tea.src = "images/tea.jpg";
+tea.src = "images/hotdrinks.jpg";
 tea.className = "topm";
 
 let coffee = new Image();
@@ -325,6 +328,7 @@ function add(a){
         }
         else {document.getElementById("div5" + a).children[2].innerHTML = "x" + cola_count;
                 document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);}
+                break;
 
                 case 4:
                   var div = document.createElement("div");
@@ -335,7 +339,7 @@ function add(a){
                   para.innerHTML = "Mcchicken";
                   div.className = "div5";
                   div.id = "div5" + a;
-                  cola_count++;
+                  mcchicken_count++;
                   para2.innerHTML = "x" + mcchicken_count;
                   para2.className = "menup2";
                   var price = mcchicken_count * 2.95;
@@ -405,6 +409,7 @@ function add(a){
                   }
                   else {document.getElementById("div5" + a).children[2].innerHTML = "x" + mcchicken_count;
                           document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);}
+                          break;
 
                           case 5:
                             var div = document.createElement("div");
@@ -485,6 +490,7 @@ function add(a){
                             }
                             else {document.getElementById("div5" + a).children[2].innerHTML = "x" + nuggets_count;
                                     document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);}
+                                    break;
 
                                     case 6:
                                       var div = document.createElement("div");
@@ -495,7 +501,7 @@ function add(a){
                                       para.innerHTML = "Fries Medium";
                                       div.className = "div5";
                                       div.id = "div5" + a;
-                                      cola_count++;
+                                      fries2_count++;
                                       para2.innerHTML = "x" + fries2_count;
                                       para2.className = "menup2";
                                       var price = fries2_count * 2.95;
@@ -505,7 +511,7 @@ function add(a){
                                       if (i6 == false)
                                       {
                                       document.getElementById("div4").appendChild(div);
-                                      document.getElementById("div5" + a).appendChild(cola);
+                                      document.getElementById("div5" + a).appendChild(fries2);
                                       document.getElementById("div5" + a).appendChild(para);
                                       document.getElementById("div5" + a).appendChild(para2);
                                       document.getElementById("div5" + a).appendChild(para3);
@@ -565,6 +571,7 @@ function add(a){
                                       }
                                       else {document.getElementById("div5" + a).children[2].innerHTML = "x" + fries2_count;
                                               document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);}
+                                              break;
 
                                               case 7:
                                                 var div = document.createElement("div");
@@ -645,6 +652,7 @@ function add(a){
                                                 }
                                                 else {document.getElementById("div5" + a).children[2].innerHTML = "x" + fries3_count;
                                                         document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);}
+                                                        break;
 
                                                         case 8:
                                                           var div = document.createElement("div");
@@ -652,7 +660,7 @@ function add(a){
                                                           var para2 = document.createElement("p");
                                                           var para3 = document.createElement("p");
                                                           para.className = "menup";
-                                                          para.innerHTML = "Strawberry Smoothie";
+                                                          para.innerHTML = "Smoothie";
                                                           div.className = "div5";
                                                           div.id = "div5" + a;
                                                           smoothie_count++;
@@ -725,6 +733,7 @@ function add(a){
                                                           }
                                                           else {document.getElementById("div5" + a).children[2].innerHTML = "x" + smoothie_count;
                                                                   document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);}
+                                                                  break;
 
                                                                   case 9:
                                                                     var div = document.createElement("div");
@@ -805,6 +814,7 @@ function add(a){
                                                                     }
                                                                     else {document.getElementById("div5" + a).children[2].innerHTML = "x" + tea_count;
                                                                             document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);}
+                                                                            break;
 
                                                                             case 10:
                                                                               var div = document.createElement("div");
@@ -885,6 +895,7 @@ function add(a){
                                                                               }
                                                                               else {document.getElementById("div5" + a).children[2].innerHTML = "x" + coffee_count;
                                                                                       document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);}
+                                                                                      break;
 
                                                                                       case 11:
                                                                                         var div = document.createElement("div");
@@ -965,5 +976,6 @@ function add(a){
                                                                                         }
                                                                                         else {document.getElementById("div5" + a).children[2].innerHTML = "x" + muffin_count;
                                                                                                 document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);}
+                                                                                                break;
     }
 }
