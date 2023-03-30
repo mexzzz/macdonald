@@ -17,6 +17,10 @@ switch(a) {
     case 4: document.getElementById("div34").style.display = "block"; document.getElementById("div24").style.display = "block"; break;
     case 5: document.getElementById("div35").style.display = "block"; document.getElementById("div25").style.display = "block"; break;
     case 6: document.getElementById("div36").style.display = "block"; document.getElementById("div26").style.display = "block"; break;
+    case 7: document.getElementById("div321").style.display = "block"; document.getElementById("div22").style.display = "block"; break;
+    case 8: document.getElementById("div311").style.display = "block"; document.getElementById("div21").style.display = "block"; break;
+    case 9: document.getElementById("div351").style.display = "block"; document.getElementById("div25").style.display = "block"; break;
+    case 10: document.getElementById("div352").style.display = "block"; document.getElementById("div25").style.display = "block"; break;
 }
 }
 
