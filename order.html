@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Bestel Pagina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/order.css" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
@@ -47,7 +48,6 @@
         <img class="topm" id="topm1" src="images/bigmac.jpg" onclick="change(1)" alt="Burger">
         <img class="topm" id="topm2" src="images/mcchicken.jpg" onclick="change(2)" alt="Chicken">
         <img class="topm" id="topm3" src="images/fries.jpg" onclick="change(3)" alt="Fries">
-        <img class="topm" id="topm4" src="images/happymeal.jpg" onclick="change(4)" alt="Happy Meal">
         <img class="topm" id="topm5" src="images/drinks.jpg" onclick="change(5)" alt="Drinks">
         <img class="topm" id="topm5" src="images/muffin.jpg" onclick="change(6)" alt="Everything Else">
     </div>
@@ -57,79 +57,145 @@
         <img class="leftm text-center" src="images/mcchicken.jpg" onclick="change(8)" alt="Burger">
     </div>
 
-    <div class="div2" id="div22">
-        <img class="leftm" src="images/mcchicken.jpg" onclick="change(2)" alt="Burger">
-        <img class="leftm" src="images/nuggets.jpg" onclick="change(7)" alt="Burger">
+    <div class="div2 text-center" id="div22">
+        <img class="leftm text-center" src="images/mcchicken.jpg" onclick="change(2)" alt="Burger">
+        <img class="leftm text-center" src="images/nuggets.jpg" onclick="change(7)" alt="Burger">
     </div>
 
-    <div class="div2 " id="div23">
-        <img class="leftm" src="images/fries.jpg" alt="Burger">
+    <div class="div2 text-center" id="div23">
+        <img class="leftm text-center" src="images/fries.jpg" alt="Burger">
     </div>
 
-    <div class="div2 " id="div24">
+    <div class="div2 text-center" id="div24">
         <img class="leftm" src="images/big-mac.webp" alt="Burger">
         <img class="leftm" src="images/big-mac.webp" alt="Burger">
         <img class="leftm" src="images/big-mac.webp" alt="Burger">
     </div>
 
-    <div class="div2" id="div25">
+    <div class="div2 text-center" id="div25">
         <img class="leftm" src="images/drinks.jpg" onclick="change(5)" alt="Soft Drinks">
         <img class="leftm" src="images/smoothies.jpg" onclick="change(9)" alt="Smoothies">
         <img class="leftm" src="images/hotdrinks.jpg" onclick="change(10)" alt="Hot Drinks">
     </div>
 
-    <div class="div2" id="div26">
+    <div class="div2 text-center" id="div26">
         <img class="leftm" src="images/muffin.jpg" alt="Muffin">
     </div>
 
     <div class="div3" id="div31">
-        <img class="midm" src="images/big-mac.webp" onclick="add(1)" alt="Big Mac">
+        <div class="menu-item text-center" onclick="add(1)">
+            <img class="midm" src="images/big-mac.webp" onclick="add(1)" alt="Big Mac">
+            <h3 class="item-name text-center">Big Mac</h3>
+            <p class="item-price text-center">$5.25</p>
+        </div>
     </div>
 
     <div class="div3" id="div311">
-        <img class="midm" src="images/mcchicken.jpg" onclick="add(4)" alt="Burger">
+
+        <div class="menu-item text-center" onclick="add(4)">
+            <img class="midm" src="images/mcchicken.jpg" onclick="add(4)" alt="Burger">
+            <h3 class="item-name text-center">McChicken</h3>
+            <p class="item-price text-center">$5.25</p>
+        </div>
     </div>
 
     <div class="div3" id="div32">
-        <img class="midm" src="images/mcchicken.jpg" onclick="add(4)" alt="Burger">
+        <div class="menu-item text-center" onclick="add(4)">
+            <img class="midm" src="images/mcchicken.jpg" onclick="add(4)" alt="Burger">
+            <h3 class="item-name text-center">McChicken</h3>
+            <p class="item-price text-center">$5.25</p>
+        </div>
     </div>
 
     <div class="div3" id="div321">
-        <img class="midm" src="images/nuggets.jpg" onclick="add(5)" alt="Nuggets">
+        <div class="menu-item text-center" onclick="add(5)">
+            <img class="midm" src="images/nuggets.jpg" onclick="add(5)" alt="Nuggets">
+            <h3 class="item-name text-center">Nuggets 9</h3>
+            <p class="item-price text-center">$6.30</p>
+        </div>
+
     </div>
 
     <div class="div3" id="div33">
-        <img class="midm" src="images/fries.jpg" onclick="add(2)" alt="Fries Small">
-        <img class="midm" src="images/fries_medium.jpg" onclick="add(6)" alt="Fries Medium">
-        <img class="midm" src="images/fries_large.jpg" onclick="add(7)" alt="Fries Large">
-    </div>
 
-    <div class="div3" id="div34">
-        <img class="midm" src="images/big-mac.webp" alt="Burger">
-        <img class="midm" src="images/big-mac.webp" alt="Burger">
-        <img class="midm" src="images/big-mac.webp" alt="Burger">
-        <img class="midm" src="images/big-mac.webp" alt="Burger">
+        <div class="menu-item" onclick="add(2)">
+            <img class="midm" src="images/fries.jpg" onclick="add(2)" alt="Fries Small">
+            <h3 class="item-name">Fries Small</h3>
+            <p class="item-price">$1.75</p>
+
+        </div>
+
+        <div class="menu-item text-center" onclick="add(6)">
+            <img class=" midm" src="images/fries_medium.jpg" onclick="add(6)" alt="Fries Medium">
+            <h3 class="item-name">Fries Medium</h3>
+            <p class="item-price">$2.35</p>
+        </div>
+
+        <div class="menu-item text-center" onclick="add(7)">
+            <img class="midm" src="images/fries_large.jpg" onclick="add(7)" alt="Fries Large">
+            <h3 class="item-name text-center">Fries Large</h3>
+            <p class="item-price text-center">$2.85</p>
+        </div>
     </div>
 
     <div class="div3" id="div35">
-        <img class="midm" src="images/drinks.jpg" onclick="add(3)" alt="Cola Large">
+
+        <div class="menu-item text-center" onclick="add(3)">
+            <img class="midm" src="images/drinks.jpg" onclick="add(3)" alt="Cola Large">
+            <h3 class="item-name text-center">Cola Large</h3>
+            <p class="item-price text-center">$3.30</p>
+        </div>
     </div>
 
     <div class="div3" id="div351">
-        <img class="midm" src="images/smoothies.jpg" onclick="add(8)" alt="Smoothie Strawberry">
+        <div class="menu-item text-center" onclick="add(8)">
+            <img class="midm" src="images/smoothies.jpg" onclick="add(8)" alt="Smoothie Strawberry">
+            <h3 class="item-name text-center">Smoothie Strawberry</h3>
+            <p class="item-price text-center">$3.85</p>
+        </div>
     </div>
 
     <div class="div3" id="div352">
-        <img class="midm" src="images/hotdrinks.jpg" onclick="add(9)" alt="Tea">
-        <img class="midm" src="images/coffee.jpg" onclick="add(10)" alt="Coffee">
+        <div class="menu-item text-center" onclick="add(9)">
+            <img class="midm" src="images/hotdrinks.jpg" onclick="add(9)" alt="Tea">
+            <h3 class="item-name text-center">Tea</h3>
+            <p class="item-price text-center">$3.30</p>
+        </div>
+        <div class="menu-item text-center" onclick="add(10)">
+            <img class="midm" src="images/coffee.jpg" onclick="add(10)" alt="Coffee">
+            <h3 class="item-name text-center">Coffee</h3>
+            <p class="item-price text-center">$4.60</p>
+        </div>
+
     </div>
 
     <div class="div3" id="div36">
-        <img class="midm" src="images/muffin.jpg" onclick="add(11)" alt="Muffin">
+        <div class="menu-item text-center" onclick="add(11)">
+            <img class="midm" src="images/muffin.jpg" onclick="add(11)" alt="Muffin">
+            <h3 class="item-name text-center">Muffin</h3>
+            <p class="item-price text-center">$2.65</p>
+        </div>
+
     </div>
 
     <div id="div4">
     </div>
+
+    <div6 id="div6">
+
+            <h1>Totaal:</h1>
+
+            <form name="InschrijfForm" method="post" action="index2_verwerk.php">
+
+                <p><input type="hidden" name="naam" id="totalprice" value=0></p>
+
+                <input type="submit" name="submit" id="submit" value="Betalen" />
+
+                </form>
+
+            <p id="totalprice-p"></p>
+
+            </div6>
 
     <script src="order.js"></script>
 </body>
