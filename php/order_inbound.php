@@ -1,16 +1,9 @@
 <?php
 
-$naam;
-$studentnummer;
-$klas;
-$ll1;
-$cll1;
-$ll2;
-$cll2;
-$ll3;
-$cll3;
-$ll4;
-$cll4;
+
+$totalprice;
+$bigmac_count;
+
 //Alle variabelen worden hier gemaakt. De gegevens worden aan deze gelinked in de index2_verwerk.php
 //ll = leerlijn. cl = cijfer
 ?>
@@ -28,16 +21,7 @@ $cll4;
     </head>
     <body>
          <!-- HTML pagina deel. Hier zet je al de gegevens op de page. -->
-        <p><?= $naam ?><br></p>
-        <p><?= $studentnummer ?><br></p>
-        <p><?= $klas ?><br></p>
-        <p><?= $ll1 ?><br></p>
-        <p><?= $cll1 ?><br></p>
-        <p><?= $ll2 ?><br></p>
-        <p><?= $cll2 ?><br></p>
-        <p><?= $ll3 ?><br></p>
-        <p><?= $cll3 ?><br></p>
-        <p><?= $ll4 ?><br></p>
-        <p><?= $cll4 ?><br></p>
+        <p><?= $totalprice ?><br></p>
+        <p><?= $bigmac_count ?><br></p>
     </body>
     </html>

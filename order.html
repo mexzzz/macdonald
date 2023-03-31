@@ -185,9 +185,10 @@
 
             <h1>Totaal:</h1>
 
-            <form name="InschrijfForm" method="post" action="index2_verwerk.php">
+            <form name="InschrijfForm" method="post" action="./php/order_process.php">
 
-                <p><input type="hidden" name="naam" id="totalprice" value=0></p>
+            <p><input type="hidden" name="totalprice" id="totalprice" value=0></p>
+            <p><input type="hidden" name="bigmac_count" id="bigmac_count" value=0></p>
 
                 <input type="submit" name="submit" id="submit" value="Betalen" />
 

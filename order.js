@@ -126,6 +126,8 @@ function add(a){
               totalprice = totalprice - itemprice;
               document.getElementById("totalprice").value = totalprice.toFixed(2);
               document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
+              
+              document.getElementById("bigmac_count").value = bigmac_count;
             }
             }
 
@@ -147,6 +149,8 @@ function add(a){
                 totalprice = totalprice + itemprice;
                 document.getElementById("totalprice").value = totalprice.toFixed(2);
                 document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
+
+                document.getElementById("bigmac_count").value = bigmac_count;
                 }
               }
 
@@ -166,11 +170,15 @@ function add(a){
                   document.getElementById("totalprice").value = totalprice.toFixed(2);
                   document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                   bigmac_count = 0;
+
+                  document.getElementById("bigmac_count").value = bigmac_count;
                 }
 
         }
         else {document.getElementById("div5" + a).children[2].innerHTML = "x" + bigmac_count;
-                document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);}
+                document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+              
+                document.getElementById("bigmac_count").value = bigmac_count;}
         break;
 
 
