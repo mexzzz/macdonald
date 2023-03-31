@@ -93,10 +93,11 @@ function add(a){
         bigmac_count++;
         para2.innerHTML = "x" + bigmac_count;
         para2.className = "menup2";
-        var price = bigmac_count * 5.25;
+        var itemprice = 5.25;
+        var price = bigmac_count * itemprice;
         para3.innerHTML = "€" + price.toFixed(2);
         para3.className = "menup2";
-        totalprice = totalprice + 5.25;
+        totalprice = totalprice + itemprice;
 
         if (i1 == false)
         {
@@ -119,10 +120,10 @@ function add(a){
           function reduce() {
             if (bigmac_count > 1){
               bigmac_count--;
-              price = bigmac_count * 5.25;
+              price = bigmac_count * itemprice;
               document.getElementById("div5" + a).children[2].innerHTML = "x" + bigmac_count;
               document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
-              totalprice = totalprice - 5.25;
+              totalprice = totalprice - itemprice;
               document.getElementById("totalprice").value = totalprice.toFixed(2);
               document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
             }
@@ -140,10 +141,10 @@ function add(a){
             function increase() {
                 if (bigmac_count < 20){
                 bigmac_count++;
-                price = bigmac_count * 4.95;
+                price = bigmac_count * itemprice;
                 document.getElementById("div5" + a).children[2].innerHTML = "x" + bigmac_count;
                 document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
-                totalprice = totalprice + 5.25;
+                totalprice = totalprice + itemprice;
                 document.getElementById("totalprice").value = totalprice.toFixed(2);
                 document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                 }
@@ -161,10 +162,10 @@ function add(a){
               function remove() {
                   div.remove();
                   i1 = false;
-                  totalprice = totalprice - 5.25 * bigmac_count;
-                  bigmac_count = 0;
+                  totalprice = totalprice - itemprice * bigmac_count;
                   document.getElementById("totalprice").value = totalprice.toFixed(2);
                   document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
+                  bigmac_count = 0;
                 }
 
         }
@@ -188,10 +189,11 @@ function add(a){
         fries_count++;
         para2.innerHTML = "x" + fries_count;
         para2.className = "menup2";
-        var price = fries_count * 1.75;
+        var itemprice = 1.75;
+        var price = fries_count * itemprice;
         para3.innerHTML = "€" + price.toFixed(2);
         para3.className = "menup2";
-        totalprice = totalprice + 1.75;
+        totalprice = totalprice + itemprice;
 
         if (i2 == false)
         {
@@ -214,9 +216,12 @@ function add(a){
           function reduce() {
             if (fries_count > 1){
               fries_count--;
-              price = fries_count * 1.95;
+              price = fries_count * itemprice;
               document.getElementById("div5" + a).children[2].innerHTML = "x" + fries_count;
               document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+              totalprice = totalprice - itemprice;
+              document.getElementById("totalprice").value = totalprice.toFixed(2);
+              document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
             }
             }
 
@@ -232,9 +237,12 @@ function add(a){
             function increase() {
                 if (fries_count < 20){
                 fries_count++;
-                price = fries_count * 1.95;
+                price = fries_count + itemprice;
                 document.getElementById("div5" + a).children[2].innerHTML = "x" + fries_count;
                 document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+                totalprice = totalprice + itemprice;
+                document.getElementById("totalprice").value = totalprice.toFixed(2);
+                document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                 }
               }
 
@@ -250,6 +258,9 @@ function add(a){
               function remove() {
                   div.remove();
                   i2 = false;
+                  totalprice = totalprice - itemprice * fries_count;
+                  document.getElementById("totalprice").value = totalprice.toFixed(2);
+                  document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                   fries_count = 0;
                 }
 
@@ -272,10 +283,11 @@ function add(a){
         cola_count++;
         para2.innerHTML = "x" + cola_count;
         para2.className = "menup2";
-        var price = cola_count * 3.30;
+        var itemprice = 3.30;
+        var price = cola_count * itemprice;
         para3.innerHTML = "€" + price.toFixed(2);
         para3.className = "menup2";
-        totalprice = totalprice + 3.30;
+        totalprice = totalprice + itemprice;
 
         if (i3 == false)
         {
@@ -298,9 +310,12 @@ function add(a){
           function reduce() {
             if (cola_count > 1){
               cola_count--;
-              price = cola_count * 2.95;
+              price = cola_count * itemprice;
               document.getElementById("div5" + a).children[2].innerHTML = "x" + cola_count;
               document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+              totalprice = totalprice - itemprice;
+              document.getElementById("totalprice").value = totalprice.toFixed(2);
+              document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
             }
             }
 
@@ -316,9 +331,12 @@ function add(a){
             function increase() {
                 if (cola_count < 20){
                     cola_count++;
-                price = cola_count * 1.95;
+                price = cola_count * itemprice;
                 document.getElementById("div5" + a).children[2].innerHTML = "x" + cola_count;
                 document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+                totalprice = totalprice + itemprice;
+                document.getElementById("totalprice").value = totalprice.toFixed(2);
+                document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                 }
               }
 
@@ -334,6 +352,9 @@ function add(a){
               function remove() {
                   div.remove();
                   i3 = false;
+                  totalprice = totalprice - itemprice * cola_count;
+                  document.getElementById("totalprice").value = totalprice.toFixed(2);
+                  document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                   cola_count = 0;
                 }
 
@@ -354,10 +375,11 @@ function add(a){
                   mcchicken_count++;
                   para2.innerHTML = "x" + mcchicken_count;
                   para2.className = "menup2";
-                  var price = mcchicken_count * 5.25;
+                  var itemprice = 5.25;
+                  var price = mcchicken_count * itemprice;
                   para3.innerHTML = "€" + price.toFixed(2);
                   para3.className = "menup2";
-                  totalprice = totalprice + 5.25;
+                  totalprice = totalprice + itemprice;
           
                   if (i4 == false)
                   {
@@ -380,9 +402,12 @@ function add(a){
                     function reduce() {
                       if (mcchicken_count > 1){
                         mcchicken_count--;
-                        price = mcchicken_count * 2.95;
+                        price = mcchicken_count * itemprice;
                         document.getElementById("div5" + a).children[2].innerHTML = "x" + mcchicken_count;
                         document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+                        totalprice = totalprice - itemprice;
+                        document.getElementById("totalprice").value = totalprice.toFixed(2);
+                        document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                       }
                       }
           
@@ -398,9 +423,12 @@ function add(a){
                       function increase() {
                           if (mcchicken_count < 20){
                               mcchicken_count++;
-                          price = mcchicken_count * 1.95;
+                          price = mcchicken_count * itemprice;
                           document.getElementById("div5" + a).children[2].innerHTML = "x" + mcchicken_count;
                           document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+                          totalprice = totalprice + itemprice;
+                          document.getElementById("totalprice").value = totalprice.toFixed(2);
+                          document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                           }
                         }
           
@@ -416,6 +444,9 @@ function add(a){
                         function remove() {
                             div.remove();
                             i4 = false;
+                            totalprice = totalprice - itemprice * mcchicken_count;
+                            document.getElementById("totalprice").value = totalprice.toFixed(2);
+                            document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                             mcchicken_count = 0;
                           }
           
@@ -436,10 +467,11 @@ function add(a){
                             nuggets_count++;
                             para2.innerHTML = "x" + nuggets_count;
                             para2.className = "menup2";
-                            var price = nuggets_count * 6.30;
+                            var itemprice = 6.30;
+                            var price = nuggets_count * itemprice;
                             para3.innerHTML = "€" + price.toFixed(2);
                             para3.className = "menup2";
-                            totalprice = totalprice + 6.30;
+                            totalprice = totalprice + itemprice;
                     
                             if (i5 == false)
                             {
@@ -462,9 +494,12 @@ function add(a){
                               function reduce() {
                                 if (nuggets_count > 1){
                                   nuggets_count--;
-                                  price = nuggets_count * 2.95;
+                                  price = nuggets_count * itemprice;
                                   document.getElementById("div5" + a).children[2].innerHTML = "x" + nuggets_count;
                                   document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+                                  totalprice = totalprice - itemprice;
+                                  document.getElementById("totalprice").value = totalprice.toFixed(2);
+                                  document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                                 }
                                 }
                     
@@ -480,9 +515,12 @@ function add(a){
                                 function increase() {
                                     if (nuggets_count < 20){
                                         nuggets_count++;
-                                    price = nuggets_count * 1.95;
+                                    price = nuggets_count * itemprice;
                                     document.getElementById("div5" + a).children[2].innerHTML = "x" + nuggets_count;
                                     document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+                                    totalprice = totalprice + itemprice;
+                                    document.getElementById("totalprice").value = totalprice.toFixed(2);
+                                    document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                                     }
                                   }
                     
@@ -498,6 +536,9 @@ function add(a){
                                   function remove() {
                                       div.remove();
                                       i5 = false;
+                                      totalprice = totalprice - itemprice * nuggets_count;
+                                      document.getElementById("totalprice").value = totalprice.toFixed(2);
+                                      document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                                       nuggets_count = 0;
                                     }
                     
@@ -518,10 +559,11 @@ function add(a){
                                       fries2_count++;
                                       para2.innerHTML = "x" + fries2_count;
                                       para2.className = "menup2";
-                                      var price = fries2_count * 2.35;
+                                      var itemprice = 2.35;
+                                      var price = fries2_count * itemprice;
                                       para3.innerHTML = "€" + price.toFixed(2);
                                       para3.className = "menup2";
-                                      totalprice = totalprice + 2.35;
+                                      totalprice = totalprice + itemprice;
                               
                                       if (i6 == false)
                                       {
@@ -544,9 +586,12 @@ function add(a){
                                         function reduce() {
                                           if (fries2_count > 1){
                                             fries2_count--;
-                                            price = fries2_count * 2.95;
+                                            price = fries2_count * itemprice;
                                             document.getElementById("div5" + a).children[2].innerHTML = "x" + fries2_count;
                                             document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+                                            totalprice = totalprice - itemprice;
+                                            document.getElementById("totalprice").value = totalprice.toFixed(2);
+                                            document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                                           }
                                           }
                               
@@ -562,9 +607,12 @@ function add(a){
                                           function increase() {
                                               if (fries2_count < 20){
                                                   fries2_count++;
-                                              price = fries2_count * 1.95;
+                                              price = fries2_count * itemprice;
                                               document.getElementById("div5" + a).children[2].innerHTML = "x" + fries2_count;
                                               document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+                                              totalprice = totalprice + itemprice;
+                                              document.getElementById("totalprice").value = totalprice.toFixed(2);
+                                              document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                                               }
                                             }
                               
@@ -580,6 +628,9 @@ function add(a){
                                             function remove() {
                                                 div.remove();
                                                 i6 = false;
+                                                totalprice = totalprice - itemprice * fries2_count;
+                                                document.getElementById("totalprice").value = totalprice.toFixed(2);
+                                                document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                                                 fries2_count = 0;
                                               }
                               
@@ -600,10 +651,11 @@ function add(a){
                                                 fries3_count++;
                                                 para2.innerHTML = "x" + fries3_count;
                                                 para2.className = "menup2";
-                                                var price = fries3_count * 2.85;
+                                                var itemprice = 2.85;
+                                                var price = fries3_count * itemprice;
                                                 para3.innerHTML = "€" + price.toFixed(2);
                                                 para3.className = "menup2";
-                                                totalprice = totalprice + 2,85;
+                                                totalprice = totalprice + itemprice;
                                         
                                                 if (i7 == false)
                                                 {
@@ -626,9 +678,12 @@ function add(a){
                                                   function reduce() {
                                                     if (fries3_count > 1){
                                                       fries3_count--;
-                                                      price = fries3_count * 2.95;
+                                                      price = fries3_count * itemprice;
                                                       document.getElementById("div5" + a).children[2].innerHTML = "x" + fries3_count;
                                                       document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+                                                      totalprice = totalprice - itemprice;
+                                                      document.getElementById("totalprice").value = totalprice.toFixed(2);
+                                                      document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                                                     }
                                                     }
                                         
@@ -644,9 +699,12 @@ function add(a){
                                                     function increase() {
                                                         if (fries3_count < 20){
                                                             fries3_count++;
-                                                        price = fries3_count * 1.95;
+                                                        price = fries3_count * itemprice;
                                                         document.getElementById("div5" + a).children[2].innerHTML = "x" + fries3_count;
                                                         document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+                                                        totalprice = totalprice + itemprice;
+                                                        document.getElementById("totalprice").value = totalprice.toFixed(2);
+                                                        document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                                                         }
                                                       }
                                         
@@ -662,6 +720,9 @@ function add(a){
                                                       function remove() {
                                                           div.remove();
                                                           i7 = false;
+                                                          totalprice = totalprice - itemprice * fries3_count;
+                                                          document.getElementById("totalprice").value = totalprice.toFixed(2);
+                                                          document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                                                           fries3_count = 0;
                                                         }
                                         
@@ -682,10 +743,11 @@ function add(a){
                                                           smoothie_count++;
                                                           para2.innerHTML = "x" + smoothie_count;
                                                           para2.className = "menup2";
-                                                          var price = smoothie_count * 3.85;
+                                                          var itemprice = 3.85;
+                                                          var price = smoothie_count * itemprice;
                                                           para3.innerHTML = "€" + price.toFixed(2);
                                                           para3.className = "menup2";
-                                                          totalprice = totalprice + 3.85;
+                                                          totalprice = totalprice + itemprice;
                                                   
                                                           if (i8 == false)
                                                           {
@@ -708,9 +770,12 @@ function add(a){
                                                             function reduce() {
                                                               if (smoothie_count > 1){
                                                                 smoothie_count--;
-                                                                price = smoothie_count * 2.95;
+                                                                price = smoothie_count * itemprice;
                                                                 document.getElementById("div5" + a).children[2].innerHTML = "x" + smoothie_count;
                                                                 document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+                                                                totalprice = totalprice - itemprice;
+                                                                document.getElementById("totalprice").value = totalprice.toFixed(2);
+                                                                document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                                                               }
                                                               }
                                                   
@@ -726,9 +791,12 @@ function add(a){
                                                               function increase() {
                                                                   if (smoothie_count < 20){
                                                                       smoothie_count++;
-                                                                  price = smoothie_count * 1.95;
+                                                                  price = smoothie_count * itemprice;
                                                                   document.getElementById("div5" + a).children[2].innerHTML = "x" + smoothie_count;
                                                                   document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+                                                                  totalprice = totalprice + itemprice;
+                                                                  document.getElementById("totalprice").value = totalprice.toFixed(2);
+                                                                  document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                                                                   }
                                                                 }
                                                   
@@ -744,6 +812,9 @@ function add(a){
                                                                 function remove() {
                                                                     div.remove();
                                                                     i8 = false;
+                                                                    totalprice = totalprice - itemprice * smoothie_count;
+                                                                    document.getElementById("totalprice").value = totalprice.toFixed(2);
+                                                                    document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                                                                     smoothie_count = 0;
                                                                   }
                                                   
@@ -764,10 +835,11 @@ function add(a){
                                                                     tea_count++;
                                                                     para2.innerHTML = "x" + tea_count;
                                                                     para2.className = "menup2";
-                                                                    var price = tea_count * 3.30;
+                                                                    var itemprice = 3.30;
+                                                                    var price = tea_count * itemprice;
                                                                     para3.innerHTML = "€" + price.toFixed(2);
                                                                     para3.className = "menup2";
-                                                                    totalprice = totalprice + 3.30;
+                                                                    totalprice = totalprice + itemprice;
                                                             
                                                                     if (i9 == false)
                                                                     {
@@ -790,9 +862,12 @@ function add(a){
                                                                       function reduce() {
                                                                         if (tea_count > 1){
                                                                           tea_count--;
-                                                                          price = tea_count * 2.95;
+                                                                          price = tea_count * itemprice;
                                                                           document.getElementById("div5" + a).children[2].innerHTML = "x" + tea_count;
                                                                           document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+                                                                          totalprice = totalprice - itemprice;
+                                                                          document.getElementById("totalprice").value = totalprice.toFixed(2);
+                                                                          document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                                                                         }
                                                                         }
                                                             
@@ -808,9 +883,12 @@ function add(a){
                                                                         function increase() {
                                                                             if (tea_count < 20){
                                                                                 tea_count++;
-                                                                            price = tea_count * 1.95;
+                                                                            price = tea_count * itemprice;
                                                                             document.getElementById("div5" + a).children[2].innerHTML = "x" + tea_count;
                                                                             document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+                                                                            totalprice = totalprice + itemprice;
+                                                                            document.getElementById("totalprice").value = totalprice.toFixed(2);
+                                                                            document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                                                                             }
                                                                           }
                                                             
@@ -826,6 +904,9 @@ function add(a){
                                                                           function remove() {
                                                                               div.remove();
                                                                               i9 = false;
+                                                                              totalprice = totalprice - itemprice * tea_count;
+                                                                              document.getElementById("totalprice").value = totalprice.toFixed(2);
+                                                                              document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                                                                               tea_count = 0;
                                                                             }
                                                             
@@ -846,10 +927,11 @@ function add(a){
                                                                               coffee_count++;
                                                                               para2.innerHTML = "x" + coffee_count;
                                                                               para2.className = "menup2";
-                                                                              var price = coffee_count * 4.60;
+                                                                              var itemprice = 4.60;
+                                                                              var price = coffee_count * itemprice;
                                                                               para3.innerHTML = "€" + price.toFixed(2);
                                                                               para3.className = "menup2";
-                                                                              totalprice = totalprice + 4.60;
+                                                                              totalprice = totalprice + itemprice;
                                                                       
                                                                               if (i10 == false)
                                                                               {
@@ -872,9 +954,12 @@ function add(a){
                                                                                 function reduce() {
                                                                                   if (coffee_count > 1){
                                                                                     coffee_count--;
-                                                                                    price = coffee_count * 2.95;
+                                                                                    price = coffee_count * itemprice;
                                                                                     document.getElementById("div5" + a).children[2].innerHTML = "x" + coffee_count;
                                                                                     document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+                                                                                    totalprice = totalprice - itemprice;
+                                                                                    document.getElementById("totalprice").value = totalprice.toFixed(2);
+                                                                                    document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                                                                                   }
                                                                                   }
                                                                       
@@ -890,9 +975,12 @@ function add(a){
                                                                                   function increase() {
                                                                                       if (coffee_count < 20){
                                                                                           coffee_count++;
-                                                                                      price = coffee_count * 1.95;
+                                                                                      price = coffee_count * itemprice;
                                                                                       document.getElementById("div5" + a).children[2].innerHTML = "x" + coffee_count;
                                                                                       document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+                                                                                      totalprice = totalprice + itemprice;
+                                                                                      document.getElementById("totalprice").value = totalprice.toFixed(2);
+                                                                                      document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                                                                                       }
                                                                                     }
                                                                       
@@ -908,6 +996,9 @@ function add(a){
                                                                                     function remove() {
                                                                                         div.remove();
                                                                                         i10 = false;
+                                                                                        totalprice = totalprice - itemprice * coffee_count;
+                                                                                        document.getElementById("totalprice").value = totalprice.toFixed(2);
+                                                                                        document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                                                                                         coffee_count = 0;
                                                                                       }
                                                                       
@@ -928,10 +1019,11 @@ function add(a){
                                                                                         muffin_count++;
                                                                                         para2.innerHTML = "x" + muffin_count;
                                                                                         para2.className = "menup2";
-                                                                                        var price = muffin_count * 2.65;
+                                                                                        var itemprice = 2.65;
+                                                                                        var price = muffin_count * itemprice;
                                                                                         para3.innerHTML = "€" + price.toFixed(2);
                                                                                         para3.className = "menup2";
-                                                                                        totalprice = totalprice + 2.65;
+                                                                                        totalprice = totalprice + itemprice;
                                                                                 
                                                                                         if (i11 == false)
                                                                                         {
@@ -954,9 +1046,12 @@ function add(a){
                                                                                           function reduce() {
                                                                                             if (muffin_count > 1){
                                                                                               muffin_count--;
-                                                                                              price = muffin_count * 2.95;
+                                                                                              price = muffin_count * itemprice;
                                                                                               document.getElementById("div5" + a).children[2].innerHTML = "x" + muffin_count;
                                                                                               document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+                                                                                              totalprice = totalprice - itemprice;
+                                                                                              document.getElementById("totalprice").value = totalprice.toFixed(2);
+                                                                                              document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                                                                                             }
                                                                                             }
                                                                                 
@@ -972,9 +1067,12 @@ function add(a){
                                                                                             function increase() {
                                                                                                 if (muffin_count < 20){
                                                                                                     muffin_count++;
-                                                                                                price = muffin_count * 1.95;
+                                                                                                price = muffin_count * itemprice;
                                                                                                 document.getElementById("div5" + a).children[2].innerHTML = "x" + muffin_count;
                                                                                                 document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+                                                                                                totalprice = totalprice + itemprice;
+                                                                                                document.getElementById("totalprice").value = totalprice.toFixed(2);
+                                                                                                document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                                                                                                 }
                                                                                               }
                                                                                 
@@ -990,6 +1088,9 @@ function add(a){
                                                                                               function remove() {
                                                                                                   div.remove();
                                                                                                   i11 = false;
+                                                                                                  totalprice = totalprice - itemprice * muffin_count;
+                                                                                                  document.getElementById("totalprice").value = totalprice.toFixed(2);
+                                                                                                  document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                                                                                                   muffin_count = 0;
                                                                                                 }
                                                                                 
