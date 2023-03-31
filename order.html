@@ -183,20 +183,16 @@
 
     <div6 id="div6">
 
-            <h1>Totaal:</h1>
+        <div class="total-container">
+            <h1>Totaal:<span class="totaalprijs" id="totalprice-p">0</span> EUR</h1>
+            <form name="InschrijfForm" method="post" action="./php/order_process.php">
+                <input type="hidden" name="totalprice" id="totalprice" value=0>
+                <input type="hidden" name="bigmac_count" id="bigmac_count" value=0>
+                <input type="submit" name="submit" id="submit" value="Betalen" />
+            </form>
+        </div>
 
-            <form name="InschrijfForm" method="post" action="./php/order_process.php">
-
-            <p><input type="hidden" name="totalprice" id="totalprice" value=0></p>
-            <p><input type="hidden" name="bigmac_count" id="bigmac_count" value=0></p>
-
-                <input type="submit" name="submit" id="submit" value="Betalen" />
-
-                </form>
-
-            <p id="totalprice-p"></p>
-
-            </div6>
+    </div6>
 
     <script src="order.js"></script>
 </body>

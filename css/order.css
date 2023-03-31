@@ -42,12 +42,6 @@
 }
 
 /* For the shopping cart page */
-.div5 {
-        border: 1px solid rgb(172, 172, 172);
-        width: 60vw;
-        height: 10vw;
-        margin-left: 5vw;
-}
 
 #div6 {
         clear: both;
@@ -128,7 +122,10 @@
         cursor: pointer;
         margin-left: 2vw;
         margin-top: 1vw;
+        width: 15vw;
+        height: 5vw;
 }
+
 
 #orderbtn {
         background-color: rgb(255, 209, 4);
@@ -165,6 +162,7 @@
         border-radius: 4px;
         color: black;
 }
+
 
 .menup2 {
         font-size: 3vw;
@@ -277,11 +275,7 @@ body {
         box-sizing: border-box;
 }
 
-h1 {
-        font-family: 'SpeedeeBold', sans-serif;
-        font-weight: bold;
-        font-size: 100px;
-}
+
 
 ul,
 li,
@@ -481,8 +475,8 @@ h2 {
 }
 
 .midm {
-        width: 140px;
-        height: 140px;
+        width: 12vw;
+        height: auto;
         border: 2px solid transparent;
         border-radius: 5px;
         cursor: pointer;
@@ -512,6 +506,7 @@ h2 {
 p {
         margin-left: 64px;
 
+
 }
 
 h3 {
@@ -532,4 +527,76 @@ h3 {
 
 .menu-item h3 {
         margin-right: 10px;
+}
+
+/* Small screens */
+@media only screen and (max-width: 767px) {
+
+        /* Adjust the size and layout of the buttons here */
+        .topm {
+
+                margin: 5px;
+        }
+}
+
+/* Medium screens */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+        /* Adjust the size and layout of the buttons here */
+        .topm {
+
+                margin: 5px;
+        }
+}
+
+/* Large screens */
+@media only screen and (min-width: 992px) {
+
+        /* Adjust the size and layout of the buttons here */
+        .topm {
+
+                margin: 10px;
+        }
+}
+
+
+.totaalprijs {
+        font-size: 15px;
+        margin-top: 5px;
+        width: auto;
+}
+
+.total-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+}
+
+.total-container h1 {
+        font-size: 24px;
+        margin: 0;
+}
+
+.totaalprijs {
+        font-size: 24px;
+        margin-left: 10px;
+}
+
+input {
+        font-size: 3vw;
+        margin-left: 4vw;
+        float: left;
+        background-color: rgb(255, 209, 4);
+        border: none;
+        color: white;
+        padding: 12px 24px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 25px;
+        margin: 10px;
+        border-radius: 4px;
+        color: black;
 }
