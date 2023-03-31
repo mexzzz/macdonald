@@ -42,13 +42,18 @@
 }
 
 /* For the shopping cart page */
+.div5 {
+        width: 60vw;
+        height: 10vw;
+        margin-left: 5vw;
+}
 
 #div6 {
         clear: both;
         float: left;
         border: 1px solid rgb(172, 172, 172);
         width: 70vw;
-        height: auto;
+        height: 10vw;
         margin-left: 20vw;
         margin-top: 2vw;
 }
@@ -89,6 +94,10 @@
         margin-top: 1vw;
         margin-right: 1vw;
         float: left;
+        border: 2px solid transparent;
+        border-radius: 25%;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
 }
 
 .leftm {
@@ -96,6 +105,10 @@
         height: auto;
         margin-left: 1vw;
         margin-top: 1vw;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
 }
 
 .midm {
@@ -103,6 +116,10 @@
         height: auto;
         margin-left: 1vw;
         margin-top: 1vw;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
 }
 
 #total {
@@ -122,10 +139,7 @@
         cursor: pointer;
         margin-left: 2vw;
         margin-top: 1vw;
-        width: 15vw;
-        height: 5vw;
 }
-
 
 #orderbtn {
         background-color: rgb(255, 209, 4);
@@ -138,7 +152,7 @@
 }
 
 .menup {
-        font-size: 3vw;
+        font-size: 1vw;
         margin-left: 4vw;
         float: left;
         background-color: rgb(255, 209, 4);
@@ -155,17 +169,15 @@
         /* Remove the underline */
         display: inline-block;
         /* Display as a block element */
-        font-size: 25px;
-        /* Set the font size */
-        margin: 10px;
+        margin: 1vw;
+        margin-top: 2vw;
         /* Set the margin */
         border-radius: 4px;
         color: black;
 }
 
-
 .menup2 {
-        font-size: 3vw;
+        font-size: 1vw;
         margin-right: 4vw;
         float: right;
         background-color: rgb(255, 209, 4);
@@ -182,9 +194,8 @@
         /* Remove the underline */
         display: inline-block;
         /* Display as a block element */
-        font-size: 16px;
-        /* Set the font size */
-        margin: 10px;
+        margin: 1vw;
+        margin-top: 2vw;
         /* Set the margin */
         border-radius: 4px;
         color: black;
@@ -192,7 +203,7 @@
 }
 
 .menubtn1 {
-        font-size: 2vw;
+        font-size: 1vw;
         margin-top: 3.5vw;
         margin-left: 4vw;
         position: absolute;
@@ -210,9 +221,8 @@
         /* Remove the underline */
         display: inline-block;
         /* Display as a block element */
-        font-size: 16px;
-        /* Set the font size */
-        margin: 10px;
+        margin: 1vw;
+        margin-top: 2vw;
         /* Set the margin */
         border-radius: 4px;
         color: black;
@@ -234,9 +244,10 @@
         /* Remove the underline */
         display: inline-block;
         /* Display as a block element */
-        font-size: 16px;
+        font-size: 1vw;
         /* Set the font size */
-        margin: 10px;
+        margin: 1vw;
+        margin-top: 2vw;
         /* Set the margin */
         border-radius: 4px;
         color: black;
@@ -258,9 +269,10 @@
         /* Remove the underline */
         display: inline-block;
         /* Display as a block element */
-        font-size: 16px;
+        font-size: 1vw;
         /* Set the font size */
-        margin: 10px;
+        margin: 1vw;
+        margin-top: 2vw;
         /* Set the margin */
         border-radius: 4px;
         color: black;
@@ -275,7 +287,11 @@ body {
         box-sizing: border-box;
 }
 
-
+h1 {
+        font-family: 'SpeedeeBold', sans-serif;
+        font-weight: bold;
+        font-size: 100px;
+}
 
 ul,
 li,
@@ -293,17 +309,17 @@ a {
 }
 
 .navbar-brand img {
-        width: 70px;
+        width: 5vw;
         height: auto;
 }
 
 .navbar-nav {
-        margin-top: 20px;
+        margin-top: 1vw;
         text-align: center;
 }
 
 .nav-item {
-        margin-bottom: 10px;
+        margin-bottom: 1vw;
 }
 
 .nav-link {
@@ -416,6 +432,7 @@ h2 {
 .navbar {
         position: relative;
         z-index: 1;
+        font-size: 1vw;
 
 }
 
@@ -426,15 +443,6 @@ h2 {
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 5px;
-}
-
-.topm {
-        width: 100px;
-        height: 100px;
-        border: 2px solid transparent;
-        border-radius: 25%;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
 }
 
 .topm:hover {
@@ -451,15 +459,6 @@ h2 {
         border: 1px solid #ccc;
 }
 
-.leftm {
-        width: 120px;
-        height: 120px;
-        border: 2px solid transparent;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-}
-
 .leftm:hover {
         transform: scale(1.1);
         border-color: #ccc;
@@ -471,16 +470,6 @@ h2 {
         align-items: center;
         border-radius: 5px;
         border: 1px solid #ccc;
-
-}
-
-.midm {
-        width: 12vw;
-        height: auto;
-        border: 2px solid transparent;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
 
 }
 
@@ -496,16 +485,8 @@ h2 {
         align-items: center;
 }
 
-.leftm {
-        padding: 0;
-        margin: 0;
-        margin-top: 1.7vw;
-        text-align: center;
-}
-
 p {
         margin-left: 64px;
-
 
 }
 
@@ -529,74 +510,17 @@ h3 {
         margin-right: 10px;
 }
 
-/* Small screens */
-@media only screen and (max-width: 767px) {
-
-        /* Adjust the size and layout of the buttons here */
-        .topm {
-
-                margin: 5px;
-        }
+#submit {
+        float: right;
+        margin-top: -4.5vw;
+        margin-right: 2vw;
+        width: 10vw;
+        height: 4vw;
+        font-size: 2vw;
+        background-color:#fdd700;
 }
 
-/* Medium screens */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-
-        /* Adjust the size and layout of the buttons here */
-        .topm {
-
-                margin: 5px;
-        }
-}
-
-/* Large screens */
-@media only screen and (min-width: 992px) {
-
-        /* Adjust the size and layout of the buttons here */
-        .topm {
-
-                margin: 10px;
-        }
-}
-
-
-.totaalprijs {
-        font-size: 15px;
-        margin-top: 5px;
-        width: auto;
-}
-
-.total-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-bottom: 10px;
-        margin-bottom: 20px;
-}
-
-.total-container h1 {
-        font-size: 24px;
-        margin: 0;
-}
-
-.totaalprijs {
-        font-size: 24px;
-        margin-left: 10px;
-}
-
-input {
-        font-size: 3vw;
-        margin-left: 4vw;
-        float: left;
-        background-color: rgb(255, 209, 4);
-        border: none;
-        color: white;
-        padding: 12px 24px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 25px;
-        margin: 10px;
-        border-radius: 4px;
-        color: black;
+#total2 {
+        margin-top: 2.5vw;
+        font-size: 4vw;
 }

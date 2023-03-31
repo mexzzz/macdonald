@@ -2,10 +2,18 @@
 
 
 $totalprice;
-$bigmac_count;
+$bigmac;
+$fries;
+$cola;
+$mcchicken;
+$nuggets;
+$fries2;
+$fries3;
+$smoothie;
+$tea;
+$coffee;
+$muffin;
 
-//Alle variabelen worden hier gemaakt. De gegevens worden aan deze gelinked in de index2_verwerk.php
-//ll = leerlijn. cl = cijfer
 ?>
 
 
@@ -20,8 +28,18 @@ $bigmac_count;
         <link href="eind.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
-         <!-- HTML pagina deel. Hier zet je al de gegevens op de page. -->
+        <p><?= $bigmac ?><br></p>
+        <p><?= $fries ?><br></p>
+        <p><?= $cola ?><br></p>
+        <p><?= $mcchicken ?><br></p>
+        <p><?= $nuggets ?><br></p>
+        <p><?= $fries2 ?><br></p>
+        <p><?= $fries3 ?><br></p>
+        <p><?= $smoothie ?><br></p>
+        <p><?= $tea ?><br></p>
+        <p><?= $coffee ?><br></p>
+        <p><?= $muffin ?><br></p>
+        <br><br>
         <p><?= $totalprice ?><br></p>
-        <p><?= $bigmac_count ?><br></p>
     </body>
     </html>

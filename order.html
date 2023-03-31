@@ -86,7 +86,7 @@
         <div class="menu-item text-center" onclick="add(1)">
             <img class="midm" src="images/big-mac.webp" alt="Big Mac">
             <h3 class="item-name text-center">Big Mac</h3>
-            <p class="item-price text-center">$5.25</p>
+            <p class="item-price text-center">€5.25</p>
         </div>
     </div>
 
@@ -95,7 +95,7 @@
         <div class="menu-item text-center" onclick="add(4)">
             <img class="midm" src="images/mcchicken.jpg" alt="Burger">
             <h3 class="item-name text-center">McChicken</h3>
-            <p class="item-price text-center">$5.25</p>
+            <p class="item-price text-center">€5.25</p>
         </div>
     </div>
 
@@ -103,7 +103,7 @@
         <div class="menu-item text-center" onclick="add(4)">
             <img class="midm" src="images/mcchicken.jpg" alt="Burger">
             <h3 class="item-name text-center">McChicken</h3>
-            <p class="item-price text-center">$5.25</p>
+            <p class="item-price text-center">€5.25</p>
         </div>
     </div>
 
@@ -111,7 +111,7 @@
         <div class="menu-item text-center" onclick="add(5)">
             <img class="midm" src="images/nuggets.jpg" alt="Nuggets">
             <h3 class="item-name text-center">Nuggets 9</h3>
-            <p class="item-price text-center">$6.30</p>
+            <p class="item-price text-center">€6.30</p>
         </div>
 
     </div>
@@ -121,20 +121,20 @@
         <div class="menu-item" onclick="add(2)">
             <img class="midm" src="images/fries.jpg" alt="Fries Small">
             <h3 class="item-name">Fries Small</h3>
-            <p class="item-price">$1.75</p>
+            <p class="item-price">€1.75</p>
 
         </div>
 
         <div class="menu-item text-center" onclick="add(6)">
             <img class=" midm" src="images/fries_medium.jpg" alt="Fries Medium">
             <h3 class="item-name">Fries Medium</h3>
-            <p class="item-price">$2.35</p>
+            <p class="item-price">€2.35</p>
         </div>
 
         <div class="menu-item text-center" onclick="add(7)">
             <img class="midm" src="images/fries_large.jpg" alt="Fries Large">
             <h3 class="item-name text-center">Fries Large</h3>
-            <p class="item-price text-center">$2.85</p>
+            <p class="item-price text-center">€2.85</p>
         </div>
     </div>
 
@@ -143,7 +143,7 @@
         <div class="menu-item text-center" onclick="add(3)">
             <img class="midm" src="images/drinks.jpg" alt="Cola Large">
             <h3 class="item-name text-center">Cola Large</h3>
-            <p class="item-price text-center">$3.30</p>
+            <p class="item-price text-center">€3.30</p>
         </div>
     </div>
 
@@ -151,7 +151,7 @@
         <div class="menu-item text-center" onclick="add(8)">
             <img class="midm" src="images/smoothies.jpg" alt="Smoothie Strawberry">
             <h3 class="item-name text-center">Smoothie Strawberry</h3>
-            <p class="item-price text-center">$3.85</p>
+            <p class="item-price text-center">€3.85</p>
         </div>
     </div>
 
@@ -159,12 +159,12 @@
         <div class="menu-item text-center" onclick="add(9)">
             <img class="midm" src="images/hotdrinks.jpg" alt="Tea">
             <h3 class="item-name text-center">Tea</h3>
-            <p class="item-price text-center">$3.30</p>
+            <p class="item-price text-center">€3.30</p>
         </div>
         <div class="menu-item text-center" onclick="add(10)">
             <img class="midm" src="images/coffee.jpg" alt="Coffee">
             <h3 class="item-name text-center">Coffee</h3>
-            <p class="item-price text-center">$4.60</p>
+            <p class="item-price text-center">€4.60</p>
         </div>
 
     </div>
@@ -173,7 +173,7 @@
         <div class="menu-item text-center" onclick="add(11)">
             <img class="midm" src="images/muffin.jpg" alt="Muffin">
             <h3 class="item-name text-center">Muffin</h3>
-            <p class="item-price text-center">$2.65</p>
+            <p class="item-price text-center">€2.65</p>
         </div>
 
     </div>
@@ -184,10 +184,20 @@
     <div6 id="div6">
 
         <div class="total-container">
-            <h1>Totaal:<span class="totaalprijs" id="totalprice-p">0</span> EUR</h1>
+            <h1 id="total2">Totaal: €<span class="totaalprijs" id="totalprice-p">0</span></h1>
             <form name="InschrijfForm" method="post" action="./php/order_process.php">
-                <input type="hidden" name="totalprice" id="totalprice" value=0>
                 <input type="hidden" name="bigmac_count" id="bigmac_count" value=0>
+                <input type="hidden" name="fries_count" id="fries_count" value=0>
+                <input type="hidden" name="cola_count" id="cola_count" value=0>
+                <input type="hidden" name="mcchicken_count" id="mcchicken_count" value=0>
+                <input type="hidden" name="nuggets_count" id="nuggets_count" value=0>
+                <input type="hidden" name="fries2_count" id="fries2_count" value=0>
+                <input type="hidden" name="fries3_count" id="fries3_count" value=0>
+                <input type="hidden" name="smoothie_count" id="smoothie_count" value=0>
+                <input type="hidden" name="tea_count" id="tea_count" value=0>
+                <input type="hidden" name="coffee_count" id="coffee_count" value=0>
+                <input type="hidden" name="muffin_count" id="muffin_count" value=0>
+                <input type="hidden" name="totalprice" id="totalprice" value=0>
                 <input type="submit" name="submit" id="submit" value="Betalen" />
             </form>
         </div>

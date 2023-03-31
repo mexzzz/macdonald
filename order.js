@@ -98,6 +98,7 @@ function add(a){
         para3.innerHTML = "€" + price.toFixed(2);
         para3.className = "menup2";
         totalprice = totalprice + itemprice;
+        document.getElementById("bigmac_count").value = bigmac_count;
 
         if (i1 == false)
         {
@@ -178,7 +179,8 @@ function add(a){
         else {document.getElementById("div5" + a).children[2].innerHTML = "x" + bigmac_count;
                 document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
               
-                document.getElementById("bigmac_count").value = bigmac_count;}
+                document.getElementById("bigmac_count").value = bigmac_count;
+              }
         break;
 
 
@@ -202,6 +204,7 @@ function add(a){
         para3.innerHTML = "€" + price.toFixed(2);
         para3.className = "menup2";
         totalprice = totalprice + itemprice;
+        document.getElementById("fries_count").value = fries_count;
 
         if (i2 == false)
         {
@@ -230,6 +233,8 @@ function add(a){
               totalprice = totalprice - itemprice;
               document.getElementById("totalprice").value = totalprice.toFixed(2);
               document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
+
+              document.getElementById("fries_count").value = fries_count;
             }
             }
 
@@ -251,6 +256,8 @@ function add(a){
                 totalprice = totalprice + itemprice;
                 document.getElementById("totalprice").value = totalprice.toFixed(2);
                 document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
+
+                document.getElementById("fries_count").value = fries_count;
                 }
               }
 
@@ -270,11 +277,16 @@ function add(a){
                   document.getElementById("totalprice").value = totalprice.toFixed(2);
                   document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                   fries_count = 0;
+
+                  document.getElementById("fries_count").value = fries_count;
                 }
 
         }
         else {document.getElementById("div5" + a).children[2].innerHTML = "x" + fries_count;
-                document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);}
+                document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+              
+                document.getElementById("fries_count").value = fries_count;
+              }
         break;
 
 
@@ -296,6 +308,7 @@ function add(a){
         para3.innerHTML = "€" + price.toFixed(2);
         para3.className = "menup2";
         totalprice = totalprice + itemprice;
+        document.getElementById("cola_count").value = cola_count;
 
         if (i3 == false)
         {
@@ -324,6 +337,8 @@ function add(a){
               totalprice = totalprice - itemprice;
               document.getElementById("totalprice").value = totalprice.toFixed(2);
               document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
+
+              document.getElementById("cola_count").value = cola_count;
             }
             }
 
@@ -345,6 +360,8 @@ function add(a){
                 totalprice = totalprice + itemprice;
                 document.getElementById("totalprice").value = totalprice.toFixed(2);
                 document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
+
+                document.getElementById("cola_count").value = cola_count;
                 }
               }
 
@@ -364,11 +381,16 @@ function add(a){
                   document.getElementById("totalprice").value = totalprice.toFixed(2);
                   document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                   cola_count = 0;
+
+                  document.getElementById("cola_count").value = cola_count;
                 }
 
         }
         else {document.getElementById("div5" + a).children[2].innerHTML = "x" + cola_count;
-                document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);}
+                document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+              
+                document.getElementById("cola_count").value = cola_count;
+              }
                 break;
 
                 case 4:
@@ -388,6 +410,7 @@ function add(a){
                   para3.innerHTML = "€" + price.toFixed(2);
                   para3.className = "menup2";
                   totalprice = totalprice + itemprice;
+                  document.getElementById("mcchicken_count").value = mcchicken_count;
           
                   if (i4 == false)
                   {
@@ -416,6 +439,8 @@ function add(a){
                         totalprice = totalprice - itemprice;
                         document.getElementById("totalprice").value = totalprice.toFixed(2);
                         document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
+
+                        document.getElementById("mcchicken_count").value = mcchicken_count;
                       }
                       }
           
@@ -437,6 +462,8 @@ function add(a){
                           totalprice = totalprice + itemprice;
                           document.getElementById("totalprice").value = totalprice.toFixed(2);
                           document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
+
+                          document.getElementById("mcchicken_count").value = mcchicken_count;
                           }
                         }
           
@@ -456,11 +483,16 @@ function add(a){
                             document.getElementById("totalprice").value = totalprice.toFixed(2);
                             document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                             mcchicken_count = 0;
+
+                            document.getElementById("mcchicken_count").value = mcchicken_count;
                           }
           
                   }
                   else {document.getElementById("div5" + a).children[2].innerHTML = "x" + mcchicken_count;
-                          document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);}
+                          document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+                        
+                          document.getElementById("mcchicken_count").value = mcchicken_count;
+                        }
                           break;
 
                           case 5:
@@ -480,6 +512,7 @@ function add(a){
                             para3.innerHTML = "€" + price.toFixed(2);
                             para3.className = "menup2";
                             totalprice = totalprice + itemprice;
+                            document.getElementById("nuggets_count").value = nuggets_count;
                     
                             if (i5 == false)
                             {
@@ -508,6 +541,8 @@ function add(a){
                                   totalprice = totalprice - itemprice;
                                   document.getElementById("totalprice").value = totalprice.toFixed(2);
                                   document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
+
+                                  document.getElementById("nuggets_count").value = nuggets_count;
                                 }
                                 }
                     
@@ -529,6 +564,8 @@ function add(a){
                                     totalprice = totalprice + itemprice;
                                     document.getElementById("totalprice").value = totalprice.toFixed(2);
                                     document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
+
+                                    document.getElementById("nuggets_count").value = nuggets_count;
                                     }
                                   }
                     
@@ -548,11 +585,16 @@ function add(a){
                                       document.getElementById("totalprice").value = totalprice.toFixed(2);
                                       document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                                       nuggets_count = 0;
+
+                                      document.getElementById("nuggets_count").value = nuggets_count;
                                     }
                     
                             }
                             else {document.getElementById("div5" + a).children[2].innerHTML = "x" + nuggets_count;
-                                    document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);}
+                                    document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+                                  
+                                    document.getElementById("nuggets_count").value = nuggets_count;
+                                  }
                                     break;
 
                                     case 6:
@@ -572,6 +614,7 @@ function add(a){
                                       para3.innerHTML = "€" + price.toFixed(2);
                                       para3.className = "menup2";
                                       totalprice = totalprice + itemprice;
+                                      document.getElementById("fries2_count").value = fries2_count;
                               
                                       if (i6 == false)
                                       {
@@ -600,6 +643,8 @@ function add(a){
                                             totalprice = totalprice - itemprice;
                                             document.getElementById("totalprice").value = totalprice.toFixed(2);
                                             document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
+
+                                            document.getElementById("fries2_count").value = fries2_count;
                                           }
                                           }
                               
@@ -621,6 +666,8 @@ function add(a){
                                               totalprice = totalprice + itemprice;
                                               document.getElementById("totalprice").value = totalprice.toFixed(2);
                                               document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
+
+                                              document.getElementById("fries2_count").value = fries2_count;
                                               }
                                             }
                               
@@ -640,11 +687,16 @@ function add(a){
                                                 document.getElementById("totalprice").value = totalprice.toFixed(2);
                                                 document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                                                 fries2_count = 0;
+
+                                                document.getElementById("fries2_count").value = fries2_count;
                                               }
                               
                                       }
                                       else {document.getElementById("div5" + a).children[2].innerHTML = "x" + fries2_count;
-                                              document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);}
+                                              document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+                                            
+                                              document.getElementById("fries2_count").value = fries2_count;
+                                            }
                                               break;
 
                                               case 7:
@@ -664,6 +716,7 @@ function add(a){
                                                 para3.innerHTML = "€" + price.toFixed(2);
                                                 para3.className = "menup2";
                                                 totalprice = totalprice + itemprice;
+                                                document.getElementById("fries3_count").value = fries3_count;
                                         
                                                 if (i7 == false)
                                                 {
@@ -692,6 +745,8 @@ function add(a){
                                                       totalprice = totalprice - itemprice;
                                                       document.getElementById("totalprice").value = totalprice.toFixed(2);
                                                       document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
+
+                                                      document.getElementById("fries3_count").value = fries3_count;
                                                     }
                                                     }
                                         
@@ -713,6 +768,8 @@ function add(a){
                                                         totalprice = totalprice + itemprice;
                                                         document.getElementById("totalprice").value = totalprice.toFixed(2);
                                                         document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
+
+                                                        document.getElementById("fries3_count").value = fries3_count;
                                                         }
                                                       }
                                         
@@ -732,11 +789,16 @@ function add(a){
                                                           document.getElementById("totalprice").value = totalprice.toFixed(2);
                                                           document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                                                           fries3_count = 0;
+
+                                                          document.getElementById("fries3_count").value = fries3_count;
                                                         }
                                         
                                                 }
                                                 else {document.getElementById("div5" + a).children[2].innerHTML = "x" + fries3_count;
-                                                        document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);}
+                                                        document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+                                                      
+                                                        document.getElementById("fries3_count").value = fries3_count;
+                                                      }
                                                         break;
 
                                                         case 8:
@@ -756,6 +818,7 @@ function add(a){
                                                           para3.innerHTML = "€" + price.toFixed(2);
                                                           para3.className = "menup2";
                                                           totalprice = totalprice + itemprice;
+                                                          document.getElementById("smoothie_count").value = smoothie_count;
                                                   
                                                           if (i8 == false)
                                                           {
@@ -784,6 +847,8 @@ function add(a){
                                                                 totalprice = totalprice - itemprice;
                                                                 document.getElementById("totalprice").value = totalprice.toFixed(2);
                                                                 document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
+
+                                                                document.getElementById("smoothie_count").value = smoothie_count;
                                                               }
                                                               }
                                                   
@@ -805,6 +870,8 @@ function add(a){
                                                                   totalprice = totalprice + itemprice;
                                                                   document.getElementById("totalprice").value = totalprice.toFixed(2);
                                                                   document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
+
+                                                                  document.getElementById("smoothie_count").value = smoothie_count;
                                                                   }
                                                                 }
                                                   
@@ -824,11 +891,16 @@ function add(a){
                                                                     document.getElementById("totalprice").value = totalprice.toFixed(2);
                                                                     document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                                                                     smoothie_count = 0;
+
+                                                                    document.getElementById("smoothie_count").value = smoothie_count;
                                                                   }
                                                   
                                                           }
                                                           else {document.getElementById("div5" + a).children[2].innerHTML = "x" + smoothie_count;
-                                                                  document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);}
+                                                                  document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+                                                                
+                                                                  document.getElementById("smoothie_count").value = smoothie_count;
+                                                                }
                                                                   break;
 
                                                                   case 9:
@@ -848,6 +920,7 @@ function add(a){
                                                                     para3.innerHTML = "€" + price.toFixed(2);
                                                                     para3.className = "menup2";
                                                                     totalprice = totalprice + itemprice;
+                                                                    document.getElementById("tea_count").value = tea_count;
                                                             
                                                                     if (i9 == false)
                                                                     {
@@ -876,6 +949,8 @@ function add(a){
                                                                           totalprice = totalprice - itemprice;
                                                                           document.getElementById("totalprice").value = totalprice.toFixed(2);
                                                                           document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
+
+                                                                          document.getElementById("tea_count").value = tea_count;
                                                                         }
                                                                         }
                                                             
@@ -897,6 +972,8 @@ function add(a){
                                                                             totalprice = totalprice + itemprice;
                                                                             document.getElementById("totalprice").value = totalprice.toFixed(2);
                                                                             document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
+
+                                                                            document.getElementById("tea_count").value = tea_count;
                                                                             }
                                                                           }
                                                             
@@ -916,11 +993,15 @@ function add(a){
                                                                               document.getElementById("totalprice").value = totalprice.toFixed(2);
                                                                               document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                                                                               tea_count = 0;
+
+                                                                              document.getElementById("tea_count").value = tea_count;
                                                                             }
                                                             
                                                                     }
                                                                     else {document.getElementById("div5" + a).children[2].innerHTML = "x" + tea_count;
-                                                                            document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);}
+                                                                            document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+                                                                          
+                                                                            document.getElementById("tea_count").value = tea_count;}
                                                                             break;
 
                                                                             case 10:
@@ -940,6 +1021,7 @@ function add(a){
                                                                               para3.innerHTML = "€" + price.toFixed(2);
                                                                               para3.className = "menup2";
                                                                               totalprice = totalprice + itemprice;
+                                                                              document.getElementById("coffee_count").value = coffee_count;
                                                                       
                                                                               if (i10 == false)
                                                                               {
@@ -968,6 +1050,8 @@ function add(a){
                                                                                     totalprice = totalprice - itemprice;
                                                                                     document.getElementById("totalprice").value = totalprice.toFixed(2);
                                                                                     document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
+
+                                                                                    document.getElementById("coffee_count").value = coffee_count;
                                                                                   }
                                                                                   }
                                                                       
@@ -989,6 +1073,8 @@ function add(a){
                                                                                       totalprice = totalprice + itemprice;
                                                                                       document.getElementById("totalprice").value = totalprice.toFixed(2);
                                                                                       document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
+
+                                                                                      document.getElementById("coffee_count").value = coffee_count;
                                                                                       }
                                                                                     }
                                                                       
@@ -1008,11 +1094,16 @@ function add(a){
                                                                                         document.getElementById("totalprice").value = totalprice.toFixed(2);
                                                                                         document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                                                                                         coffee_count = 0;
+
+                                                                                        document.getElementById("coffee_count").value = coffee_count;
                                                                                       }
                                                                       
                                                                               }
                                                                               else {document.getElementById("div5" + a).children[2].innerHTML = "x" + coffee_count;
-                                                                                      document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);}
+                                                                                      document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+                                                                                    
+                                                                                      document.getElementById("coffee_count").value = coffee_count;
+                                                                                    }
                                                                                       break;
 
                                                                                       case 11:
@@ -1032,6 +1123,7 @@ function add(a){
                                                                                         para3.innerHTML = "€" + price.toFixed(2);
                                                                                         para3.className = "menup2";
                                                                                         totalprice = totalprice + itemprice;
+                                                                                        document.getElementById("muffin_count").value = muffin_count;
                                                                                 
                                                                                         if (i11 == false)
                                                                                         {
@@ -1060,6 +1152,8 @@ function add(a){
                                                                                               totalprice = totalprice - itemprice;
                                                                                               document.getElementById("totalprice").value = totalprice.toFixed(2);
                                                                                               document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
+
+                                                                                              document.getElementById("muffin_count").value = muffin_count;
                                                                                             }
                                                                                             }
                                                                                 
@@ -1081,6 +1175,8 @@ function add(a){
                                                                                                 totalprice = totalprice + itemprice;
                                                                                                 document.getElementById("totalprice").value = totalprice.toFixed(2);
                                                                                                 document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
+
+                                                                                                document.getElementById("muffin_count").value = muffin_count;
                                                                                                 }
                                                                                               }
                                                                                 
@@ -1100,11 +1196,16 @@ function add(a){
                                                                                                   document.getElementById("totalprice").value = totalprice.toFixed(2);
                                                                                                   document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                                                                                                   muffin_count = 0;
+
+                                                                                                  document.getElementById("muffin_count").value = muffin_count;
                                                                                                 }
                                                                                 
                                                                                         }
                                                                                         else {document.getElementById("div5" + a).children[2].innerHTML = "x" + muffin_count;
-                                                                                                document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);}
+                                                                                                document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+                                                                                              
+                                                                                                document.getElementById("muffin_count").value = muffin_count;
+                                                                                              }
                                                                                                 break;
     }
 
