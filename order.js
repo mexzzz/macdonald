@@ -93,10 +93,10 @@ function add(a){
         bigmac_count++;
         para2.innerHTML = "x" + bigmac_count;
         para2.className = "menup2";
-        var price = bigmac_count * 4.95;
+        var price = bigmac_count * 5.25;
         para3.innerHTML = "€" + price.toFixed(2);
-        totalprice = totalprice + 4.95;
         para3.className = "menup2";
+        totalprice = totalprice + 5.25;
 
         if (i1 == false)
         {
@@ -119,10 +119,12 @@ function add(a){
           function reduce() {
             if (bigmac_count > 1){
               bigmac_count--;
-              price = bigmac_count * 4.95;
+              price = bigmac_count * 5.25;
               document.getElementById("div5" + a).children[2].innerHTML = "x" + bigmac_count;
               document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
-              totalprice = totalprice + price.toFixed(2);
+              totalprice = totalprice - 5.25;
+              document.getElementById("totalprice").value = totalprice.toFixed(2);
+              document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
             }
             }
 
@@ -141,6 +143,9 @@ function add(a){
                 price = bigmac_count * 4.95;
                 document.getElementById("div5" + a).children[2].innerHTML = "x" + bigmac_count;
                 document.getElementById("div5" + a).children[3].innerHTML = "€" + price.toFixed(2);
+                totalprice = totalprice + 5.25;
+                document.getElementById("totalprice").value = totalprice.toFixed(2);
+                document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                 }
               }
 
@@ -156,7 +161,10 @@ function add(a){
               function remove() {
                   div.remove();
                   i1 = false;
+                  totalprice = totalprice - 5.25 * bigmac_count;
                   bigmac_count = 0;
+                  document.getElementById("totalprice").value = totalprice.toFixed(2);
+                  document.getElementById("totalprice-p").innerHTML = totalprice.toFixed(2);
                 }
 
         }
@@ -172,7 +180,7 @@ function add(a){
         var para2 = document.createElement("p");
         var para3 = document.createElement("p");
         para.className = "menup";
-        para.innerHTML = "Big Mac";
+        para.innerHTML = "Fries Small";
         div.className = "div5";
         div.id = "div5" + a;
         para.className = "menup";
@@ -180,9 +188,10 @@ function add(a){
         fries_count++;
         para2.innerHTML = "x" + fries_count;
         para2.className = "menup2";
-        var price = fries_count * 1.95;
+        var price = fries_count * 1.75;
         para3.innerHTML = "€" + price.toFixed(2);
         para3.className = "menup2";
+        totalprice = totalprice + 1.75;
 
         if (i2 == false)
         {
@@ -263,9 +272,10 @@ function add(a){
         cola_count++;
         para2.innerHTML = "x" + cola_count;
         para2.className = "menup2";
-        var price = cola_count * 2.95;
+        var price = cola_count * 3.30;
         para3.innerHTML = "€" + price.toFixed(2);
         para3.className = "menup2";
+        totalprice = totalprice + 3.30;
 
         if (i3 == false)
         {
@@ -344,9 +354,10 @@ function add(a){
                   mcchicken_count++;
                   para2.innerHTML = "x" + mcchicken_count;
                   para2.className = "menup2";
-                  var price = mcchicken_count * 2.95;
+                  var price = mcchicken_count * 5.25;
                   para3.innerHTML = "€" + price.toFixed(2);
                   para3.className = "menup2";
+                  totalprice = totalprice + 5.25;
           
                   if (i4 == false)
                   {
@@ -425,9 +436,10 @@ function add(a){
                             nuggets_count++;
                             para2.innerHTML = "x" + nuggets_count;
                             para2.className = "menup2";
-                            var price = nuggets_count * 2.95;
+                            var price = nuggets_count * 6.30;
                             para3.innerHTML = "€" + price.toFixed(2);
                             para3.className = "menup2";
+                            totalprice = totalprice + 6.30;
                     
                             if (i5 == false)
                             {
@@ -506,9 +518,10 @@ function add(a){
                                       fries2_count++;
                                       para2.innerHTML = "x" + fries2_count;
                                       para2.className = "menup2";
-                                      var price = fries2_count * 2.95;
+                                      var price = fries2_count * 2.35;
                                       para3.innerHTML = "€" + price.toFixed(2);
                                       para3.className = "menup2";
+                                      totalprice = totalprice + 2.35;
                               
                                       if (i6 == false)
                                       {
@@ -587,9 +600,10 @@ function add(a){
                                                 fries3_count++;
                                                 para2.innerHTML = "x" + fries3_count;
                                                 para2.className = "menup2";
-                                                var price = fries3_count * 2.95;
+                                                var price = fries3_count * 2.85;
                                                 para3.innerHTML = "€" + price.toFixed(2);
                                                 para3.className = "menup2";
+                                                totalprice = totalprice + 2,85;
                                         
                                                 if (i7 == false)
                                                 {
@@ -668,9 +682,10 @@ function add(a){
                                                           smoothie_count++;
                                                           para2.innerHTML = "x" + smoothie_count;
                                                           para2.className = "menup2";
-                                                          var price = smoothie_count * 2.95;
+                                                          var price = smoothie_count * 3.85;
                                                           para3.innerHTML = "€" + price.toFixed(2);
                                                           para3.className = "menup2";
+                                                          totalprice = totalprice + 3.85;
                                                   
                                                           if (i8 == false)
                                                           {
@@ -749,9 +764,10 @@ function add(a){
                                                                     tea_count++;
                                                                     para2.innerHTML = "x" + tea_count;
                                                                     para2.className = "menup2";
-                                                                    var price = tea_count * 2.95;
+                                                                    var price = tea_count * 3.30;
                                                                     para3.innerHTML = "€" + price.toFixed(2);
                                                                     para3.className = "menup2";
+                                                                    totalprice = totalprice + 3.30;
                                                             
                                                                     if (i9 == false)
                                                                     {
@@ -830,9 +846,10 @@ function add(a){
                                                                               coffee_count++;
                                                                               para2.innerHTML = "x" + coffee_count;
                                                                               para2.className = "menup2";
-                                                                              var price = coffee_count * 2.95;
+                                                                              var price = coffee_count * 4.60;
                                                                               para3.innerHTML = "€" + price.toFixed(2);
                                                                               para3.className = "menup2";
+                                                                              totalprice = totalprice + 4.60;
                                                                       
                                                                               if (i10 == false)
                                                                               {
@@ -911,9 +928,10 @@ function add(a){
                                                                                         muffin_count++;
                                                                                         para2.innerHTML = "x" + muffin_count;
                                                                                         para2.className = "menup2";
-                                                                                        var price = muffin_count * 2.95;
+                                                                                        var price = muffin_count * 2.65;
                                                                                         para3.innerHTML = "€" + price.toFixed(2);
                                                                                         para3.className = "menup2";
+                                                                                        totalprice = totalprice + 2.65;
                                                                                 
                                                                                         if (i11 == false)
                                                                                         {
